@@ -166,7 +166,7 @@ namespace CECLdb
             this.bttnAddInscription.Name = "bttnAddInscription";
             this.bttnAddInscription.Size = new System.Drawing.Size(97, 27);
             this.bttnAddInscription.TabIndex = 15;
-            this.bttnAddInscription.Text = "Agregar";
+            this.bttnAddInscription.Text = "Guardar";
             this.bttnAddInscription.UseVisualStyleBackColor = false;
             // 
             // InscriptionReg

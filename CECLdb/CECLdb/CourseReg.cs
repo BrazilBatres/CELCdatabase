@@ -14,5 +14,10 @@ namespace CECLdb
         {
             InitializeComponent();
         }
+
+        private void lblSelectArea_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
