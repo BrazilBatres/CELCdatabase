@@ -36,7 +36,7 @@ namespace CECLdb
             this.lblPersonIDInscription = new System.Windows.Forms.Label();
             this.txtbPersonIDInscription = new System.Windows.Forms.TextBox();
             this.lblPersonNameInscription = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbPersonNameInscription = new System.Windows.Forms.TextBox();
             this.ckbApproved = new System.Windows.Forms.CheckBox();
             this.lblStartDate = new System.Windows.Forms.Label();
             this.txtbStartdateInscription = new System.Windows.Forms.TextBox();
@@ -106,14 +106,14 @@ namespace CECLdb
             this.lblPersonNameInscription.TabIndex = 6;
             this.lblPersonNameInscription.Text = "Nombre de la persona";
             // 
-            // textBox1
+            // txtbPersonNameInscription
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(504, 146);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(498, 27);
-            this.textBox1.TabIndex = 7;
+            this.txtbPersonNameInscription.Enabled = false;
+            this.txtbPersonNameInscription.Location = new System.Drawing.Point(504, 146);
+            this.txtbPersonNameInscription.Name = "txtbPersonNameInscription";
+            this.txtbPersonNameInscription.ReadOnly = true;
+            this.txtbPersonNameInscription.Size = new System.Drawing.Size(498, 27);
+            this.txtbPersonNameInscription.TabIndex = 7;
             // 
             // ckbApproved
             // 
@@ -180,7 +180,7 @@ namespace CECLdb
             this.Controls.Add(this.txtbStartdateInscription);
             this.Controls.Add(this.lblStartDate);
             this.Controls.Add(this.ckbApproved);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbPersonNameInscription);
             this.Controls.Add(this.lblPersonNameInscription);
             this.Controls.Add(this.txtbPersonIDInscription);
             this.Controls.Add(this.lblPersonIDInscription);
@@ -204,7 +204,7 @@ namespace CECLdb
         private System.Windows.Forms.Label lblPersonIDInscription;
         private System.Windows.Forms.TextBox txtbPersonIDInscription;
         private System.Windows.Forms.Label lblPersonNameInscription;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbPersonNameInscription;
         private System.Windows.Forms.CheckBox ckbApproved;
         private System.Windows.Forms.Label lblStartDate;
         private System.Windows.Forms.TextBox txtbStartdateInscription;
