@@ -8,23 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\brazi\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jocel\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brazi\\source\\repos\\CECLdb\\CECLdb\\CECLdb.csproj",
+      "projectUniqueName": "C:\\Users\\jocel\\OneDrive\\Documentos\\GitHub\\CELCdatabase\\CECLdb\\CECLdb\\CECLdb.csproj",
       "projectName": "CECLdb",
-      "projectPath": "C:\\Users\\brazi\\source\\repos\\CECLdb\\CECLdb\\CECLdb.csproj",
-      "packagesPath": "C:\\Users\\brazi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brazi\\source\\repos\\CECLdb\\CECLdb\\obj\\",
+      "projectPath": "C:\\Users\\jocel\\OneDrive\\Documentos\\GitHub\\CELCdatabase\\CECLdb\\CECLdb\\CECLdb.csproj",
+      "packagesPath": "C:\\Users\\jocel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jocel\\OneDrive\\Documentos\\GitHub\\CELCdatabase\\CECLdb\\CECLdb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\brazi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jocel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,7 +68,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
