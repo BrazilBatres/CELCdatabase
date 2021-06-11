@@ -40,6 +40,7 @@ namespace CECLdb
             this.lblConsultationDate = new System.Windows.Forms.Label();
             this.dtpConsultationDate = new System.Windows.Forms.DateTimePicker();
             this.bttnAddRegister = new System.Windows.Forms.Button();
+            this.bttnReturnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtbPersonNameRegister
@@ -131,18 +132,30 @@ namespace CECLdb
             // bttnAddRegister
             // 
             this.bttnAddRegister.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bttnAddRegister.Location = new System.Drawing.Point(476, 326);
+            this.bttnAddRegister.Location = new System.Drawing.Point(419, 326);
             this.bttnAddRegister.Name = "bttnAddRegister";
             this.bttnAddRegister.Size = new System.Drawing.Size(93, 29);
             this.bttnAddRegister.TabIndex = 18;
             this.bttnAddRegister.Text = "Guardar";
             this.bttnAddRegister.UseVisualStyleBackColor = false;
             // 
+            // bttnReturnRegister
+            // 
+            this.bttnReturnRegister.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bttnReturnRegister.Location = new System.Drawing.Point(555, 326);
+            this.bttnReturnRegister.Name = "bttnReturnRegister";
+            this.bttnReturnRegister.Size = new System.Drawing.Size(93, 29);
+            this.bttnReturnRegister.TabIndex = 19;
+            this.bttnReturnRegister.Text = "Regresar";
+            this.bttnReturnRegister.UseVisualStyleBackColor = false;
+            this.bttnReturnRegister.Click += new System.EventHandler(this.bttnReturnRegister_Click);
+            // 
             // RegisterReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1049, 422);
+            this.Controls.Add(this.bttnReturnRegister);
             this.Controls.Add(this.bttnAddRegister);
             this.Controls.Add(this.dtpConsultationDate);
             this.Controls.Add(this.lblConsultationDate);
@@ -174,5 +187,6 @@ namespace CECLdb
         private System.Windows.Forms.Label lblConsultationDate;
         private System.Windows.Forms.DateTimePicker dtpConsultationDate;
         private System.Windows.Forms.Button bttnAddRegister;
+        private System.Windows.Forms.Button bttnReturnRegister;
     }
 }

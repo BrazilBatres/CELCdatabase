@@ -34,8 +34,9 @@ namespace CECLdb
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtbEmail = new System.Windows.Forms.TextBox();
             this.lblTelNumber = new System.Windows.Forms.Label();
-            this.txtbTelNumber = new System.Windows.Forms.TextBox();
             this.bttnAddPerson = new System.Windows.Forms.Button();
+            this.bttnReturnPerson = new System.Windows.Forms.Button();
+            this.mtbTelephonPerson = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lblName
@@ -82,32 +83,45 @@ namespace CECLdb
             this.lblTelNumber.TabIndex = 4;
             this.lblTelNumber.Text = "Teléfono";
             // 
-            // txtbTelNumber
-            // 
-            this.txtbTelNumber.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtbTelNumber.Location = new System.Drawing.Point(46, 309);
-            this.txtbTelNumber.Name = "txtbTelNumber";
-            this.txtbTelNumber.Size = new System.Drawing.Size(439, 27);
-            this.txtbTelNumber.TabIndex = 5;
-            // 
             // bttnAddPerson
             // 
             this.bttnAddPerson.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.bttnAddPerson.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bttnAddPerson.Location = new System.Drawing.Point(369, 380);
+            this.bttnAddPerson.Location = new System.Drawing.Point(288, 371);
             this.bttnAddPerson.Name = "bttnAddPerson";
             this.bttnAddPerson.Size = new System.Drawing.Size(94, 29);
             this.bttnAddPerson.TabIndex = 6;
             this.bttnAddPerson.Text = "Agregar";
             this.bttnAddPerson.UseVisualStyleBackColor = false;
             // 
+            // bttnReturnPerson
+            // 
+            this.bttnReturnPerson.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bttnReturnPerson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bttnReturnPerson.Location = new System.Drawing.Point(411, 371);
+            this.bttnReturnPerson.Name = "bttnReturnPerson";
+            this.bttnReturnPerson.Size = new System.Drawing.Size(94, 29);
+            this.bttnReturnPerson.TabIndex = 7;
+            this.bttnReturnPerson.Text = "Regresar";
+            this.bttnReturnPerson.UseVisualStyleBackColor = false;
+            this.bttnReturnPerson.Click += new System.EventHandler(this.bttnReturnPerson_Click);
+            // 
+            // mtbTelephonPerson
+            // 
+            this.mtbTelephonPerson.Location = new System.Drawing.Point(46, 294);
+            this.mtbTelephonPerson.Mask = "0000-0000";
+            this.mtbTelephonPerson.Name = "mtbTelephonPerson";
+            this.mtbTelephonPerson.Size = new System.Drawing.Size(79, 27);
+            this.mtbTelephonPerson.TabIndex = 8;
+            // 
             // PersonReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mtbTelephonPerson);
+            this.Controls.Add(this.bttnReturnPerson);
             this.Controls.Add(this.bttnAddPerson);
-            this.Controls.Add(this.txtbTelNumber);
             this.Controls.Add(this.lblTelNumber);
             this.Controls.Add(this.txtbEmail);
             this.Controls.Add(this.lblEmail);
@@ -127,7 +141,8 @@ namespace CECLdb
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtbEmail;
         private System.Windows.Forms.Label lblTelNumber;
-        private System.Windows.Forms.TextBox txtbTelNumber;
         private System.Windows.Forms.Button bttnAddPerson;
+        private System.Windows.Forms.Button bttnReturnPerson;
+        private System.Windows.Forms.MaskedTextBox mtbTelephonPerson;
     }
 }

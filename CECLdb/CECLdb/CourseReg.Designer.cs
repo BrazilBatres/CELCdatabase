@@ -34,6 +34,7 @@ namespace CECLdb
             this.lblCourseName = new System.Windows.Forms.Label();
             this.txtbCourseName = new System.Windows.Forms.TextBox();
             this.bttnAddCourse = new System.Windows.Forms.Button();
+            this.bttnReturnCourse = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSelectAreaCourse
@@ -73,18 +74,30 @@ namespace CECLdb
             // bttnAddCourse
             // 
             this.bttnAddCourse.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bttnAddCourse.Location = new System.Drawing.Point(351, 337);
+            this.bttnAddCourse.Location = new System.Drawing.Point(293, 343);
             this.bttnAddCourse.Name = "bttnAddCourse";
             this.bttnAddCourse.Size = new System.Drawing.Size(108, 28);
             this.bttnAddCourse.TabIndex = 4;
             this.bttnAddCourse.Text = "Agregar";
             this.bttnAddCourse.UseVisualStyleBackColor = false;
             // 
+            // bttnReturnCourse
+            // 
+            this.bttnReturnCourse.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bttnReturnCourse.Location = new System.Drawing.Point(416, 343);
+            this.bttnReturnCourse.Name = "bttnReturnCourse";
+            this.bttnReturnCourse.Size = new System.Drawing.Size(108, 28);
+            this.bttnReturnCourse.TabIndex = 5;
+            this.bttnReturnCourse.Text = "Regresar";
+            this.bttnReturnCourse.UseVisualStyleBackColor = false;
+            this.bttnReturnCourse.Click += new System.EventHandler(this.bttnReturnCourse_Click);
+            // 
             // CourseReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bttnReturnCourse);
             this.Controls.Add(this.bttnAddCourse);
             this.Controls.Add(this.txtbCourseName);
             this.Controls.Add(this.lblCourseName);
@@ -104,5 +117,6 @@ namespace CECLdb
         private System.Windows.Forms.Label lblCourseName;
         private System.Windows.Forms.TextBox txtbCourseName;
         private System.Windows.Forms.Button bttnAddCourse;
+        private System.Windows.Forms.Button bttnReturnCourse;
     }
 }

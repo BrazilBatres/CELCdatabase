@@ -19,5 +19,12 @@ namespace CECLdb
         {
 
         }
+
+        private void bttnReturnArea_Click(object sender, EventArgs e)
+        {
+            Menu Frm = new Menu();
+            Frm.Show();
+            this.Close();
+        }
     }
 }

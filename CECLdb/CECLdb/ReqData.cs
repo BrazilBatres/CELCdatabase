@@ -17,7 +17,9 @@ namespace CECLdb
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Menu Frm = new Menu();
+            Frm.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

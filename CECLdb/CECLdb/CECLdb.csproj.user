@@ -19,6 +19,9 @@
     <Compile Update="InscriptionReg.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="PeopleSearch.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -50,6 +50,7 @@ namespace CECLdb
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.CursoSrcBtn = new System.Windows.Forms.Button();
+            this.bttnReturnSearchCourOrAd = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -259,11 +260,22 @@ namespace CECLdb
             this.CursoSrcBtn.UseVisualStyleBackColor = true;
             this.CursoSrcBtn.Click += new System.EventHandler(this.CursoSrcBtn_Click);
             // 
+            // bttnReturnSearchCourOrAd
+            // 
+            this.bttnReturnSearchCourOrAd.Location = new System.Drawing.Point(157, 461);
+            this.bttnReturnSearchCourOrAd.Name = "bttnReturnSearchCourOrAd";
+            this.bttnReturnSearchCourOrAd.Size = new System.Drawing.Size(94, 29);
+            this.bttnReturnSearchCourOrAd.TabIndex = 17;
+            this.bttnReturnSearchCourOrAd.Text = "Regresar";
+            this.bttnReturnSearchCourOrAd.UseVisualStyleBackColor = true;
+            this.bttnReturnSearchCourOrAd.Click += new System.EventHandler(this.bttnReturnSearchCourOrAd_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1377, 502);
+            this.Controls.Add(this.bttnReturnSearchCourOrAd);
             this.Controls.Add(this.CursoSrcBtn);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -304,6 +316,7 @@ namespace CECLdb
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button CursoSrcBtn;
+        private System.Windows.Forms.Button bttnReturnSearchCourOrAd;
     }
 }
 

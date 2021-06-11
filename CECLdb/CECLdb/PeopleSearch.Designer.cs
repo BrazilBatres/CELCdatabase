@@ -44,6 +44,7 @@ namespace CECLdb
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.PeopleSrcBtn = new System.Windows.Forms.Button();
+            this.bttnReturn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -195,11 +196,22 @@ namespace CECLdb
             this.PeopleSrcBtn.UseVisualStyleBackColor = true;
             this.PeopleSrcBtn.Click += new System.EventHandler(this.PeopleSrcBtn_Click);
             // 
+            // bttnReturn
+            // 
+            this.bttnReturn.Location = new System.Drawing.Point(131, 210);
+            this.bttnReturn.Name = "bttnReturn";
+            this.bttnReturn.Size = new System.Drawing.Size(94, 29);
+            this.bttnReturn.TabIndex = 18;
+            this.bttnReturn.Text = "Regresar";
+            this.bttnReturn.UseVisualStyleBackColor = true;
+            this.bttnReturn.Click += new System.EventHandler(this.bttnReturn_Click);
+            // 
             // PeopleSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 251);
+            this.Controls.Add(this.bttnReturn);
             this.Controls.Add(this.PeopleSrcBtn);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -235,5 +247,6 @@ namespace CECLdb
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Button PeopleSrcBtn;
+        private System.Windows.Forms.Button bttnReturn;
     }
 }

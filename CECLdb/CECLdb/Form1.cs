@@ -32,5 +32,12 @@ namespace CECLdb
         {
 
         }
+
+        private void bttnReturnSearchCourOrAd_Click(object sender, EventArgs e)
+        {
+            Menu Frm = new Menu();
+            Frm.Show();
+            this.Close();
+        }
     }
 }

@@ -14,5 +14,12 @@ namespace CECLdb
         {
             InitializeComponent();
         }
+
+        private void bttnReturnRegister_Click(object sender, EventArgs e)
+        {
+            Menu Frm = new Menu();
+            Frm.Show();
+            this.Close();
+        }
     }
 }

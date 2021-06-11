@@ -36,6 +36,7 @@ namespace CECLdb
             this.lblAreaName = new System.Windows.Forms.Label();
             this.txtbAreaName = new System.Windows.Forms.TextBox();
             this.bttnAddArea = new System.Windows.Forms.Button();
+            this.bttnReturnArea = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblYear
@@ -92,18 +93,30 @@ namespace CECLdb
             // bttnAddArea
             // 
             this.bttnAddArea.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bttnAddArea.Location = new System.Drawing.Point(357, 349);
+            this.bttnAddArea.Location = new System.Drawing.Point(312, 349);
             this.bttnAddArea.Name = "bttnAddArea";
             this.bttnAddArea.Size = new System.Drawing.Size(94, 30);
             this.bttnAddArea.TabIndex = 7;
             this.bttnAddArea.Text = "Agregar";
             this.bttnAddArea.UseVisualStyleBackColor = false;
             // 
+            // bttnReturnArea
+            // 
+            this.bttnReturnArea.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bttnReturnArea.Location = new System.Drawing.Point(412, 349);
+            this.bttnReturnArea.Name = "bttnReturnArea";
+            this.bttnReturnArea.Size = new System.Drawing.Size(94, 30);
+            this.bttnReturnArea.TabIndex = 8;
+            this.bttnReturnArea.Text = "Regresar";
+            this.bttnReturnArea.UseVisualStyleBackColor = false;
+            this.bttnReturnArea.Click += new System.EventHandler(this.bttnReturnArea_Click);
+            // 
             // AreaReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bttnReturnArea);
             this.Controls.Add(this.bttnAddArea);
             this.Controls.Add(this.txtbAreaName);
             this.Controls.Add(this.lblAreaName);
@@ -127,5 +140,6 @@ namespace CECLdb
         private System.Windows.Forms.Label lblAreaName;
         private System.Windows.Forms.TextBox txtbAreaName;
         private System.Windows.Forms.Button bttnAddArea;
+        private System.Windows.Forms.Button bttnReturnArea;
     }
 }

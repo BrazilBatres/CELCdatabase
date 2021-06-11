@@ -38,7 +38,8 @@ namespace CECLdb
             this.lblPersonNameES = new System.Windows.Forms.Label();
             this.txtbPersonNameES = new System.Windows.Forms.TextBox();
             this.bttnAddES = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bttnImportDataEmailSent = new System.Windows.Forms.Button();
+            this.bttnReturnEmailSent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblAdNumberES
@@ -108,29 +109,41 @@ namespace CECLdb
             // bttnAddES
             // 
             this.bttnAddES.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bttnAddES.Location = new System.Drawing.Point(289, 377);
+            this.bttnAddES.Location = new System.Drawing.Point(238, 377);
             this.bttnAddES.Name = "bttnAddES";
             this.bttnAddES.Size = new System.Drawing.Size(87, 29);
             this.bttnAddES.TabIndex = 8;
             this.bttnAddES.Text = "Guardar";
             this.bttnAddES.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // bttnImportDataEmailSent
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Location = new System.Drawing.Point(425, 377);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 29);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Importar datos";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bttnImportDataEmailSent.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bttnImportDataEmailSent.Location = new System.Drawing.Point(350, 377);
+            this.bttnImportDataEmailSent.Name = "bttnImportDataEmailSent";
+            this.bttnImportDataEmailSent.Size = new System.Drawing.Size(138, 29);
+            this.bttnImportDataEmailSent.TabIndex = 9;
+            this.bttnImportDataEmailSent.Text = "Importar datos";
+            this.bttnImportDataEmailSent.UseVisualStyleBackColor = false;
+            // 
+            // bttnReturnEmailSent
+            // 
+            this.bttnReturnEmailSent.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bttnReturnEmailSent.Location = new System.Drawing.Point(518, 377);
+            this.bttnReturnEmailSent.Name = "bttnReturnEmailSent";
+            this.bttnReturnEmailSent.Size = new System.Drawing.Size(87, 29);
+            this.bttnReturnEmailSent.TabIndex = 10;
+            this.bttnReturnEmailSent.Text = "Regresar";
+            this.bttnReturnEmailSent.UseVisualStyleBackColor = false;
+            this.bttnReturnEmailSent.Click += new System.EventHandler(this.bttnReturnEmailSent_Click);
             // 
             // EmailSentReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bttnReturnEmailSent);
+            this.Controls.Add(this.bttnImportDataEmailSent);
             this.Controls.Add(this.bttnAddES);
             this.Controls.Add(this.txtbPersonNameES);
             this.Controls.Add(this.lblPersonNameES);
@@ -158,6 +171,7 @@ namespace CECLdb
         private System.Windows.Forms.Label lblPersonNameES;
         private System.Windows.Forms.TextBox txtbPersonNameES;
         private System.Windows.Forms.Button bttnAddES;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bttnImportDataEmailSent;
+        private System.Windows.Forms.Button bttnReturnEmailSent;
     }
 }

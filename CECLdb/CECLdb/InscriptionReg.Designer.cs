@@ -39,10 +39,11 @@ namespace CECLdb
             this.txtbPersonNameInscription = new System.Windows.Forms.TextBox();
             this.ckbApproved = new System.Windows.Forms.CheckBox();
             this.lblStartDate = new System.Windows.Forms.Label();
-            this.txtbStartdateInscription = new System.Windows.Forms.TextBox();
             this.lblFinalDateInscription = new System.Windows.Forms.Label();
-            this.txtbFinalDateInscription = new System.Windows.Forms.TextBox();
             this.bttnAddInscription = new System.Windows.Forms.Button();
+            this.bttnReturnInscription = new System.Windows.Forms.Button();
+            this.mtbStartDate = new System.Windows.Forms.MaskedTextBox();
+            this.mtbFinalDate = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lblSelectAreaInscription
@@ -90,7 +91,6 @@ namespace CECLdb
             // 
             // txtbPersonIDInscription
             // 
-            this.txtbPersonIDInscription.Enabled = false;
             this.txtbPersonIDInscription.Location = new System.Drawing.Point(504, 57);
             this.txtbPersonIDInscription.Name = "txtbPersonIDInscription";
             this.txtbPersonIDInscription.ReadOnly = true;
@@ -108,7 +108,6 @@ namespace CECLdb
             // 
             // txtbPersonNameInscription
             // 
-            this.txtbPersonNameInscription.Enabled = false;
             this.txtbPersonNameInscription.Location = new System.Drawing.Point(504, 146);
             this.txtbPersonNameInscription.Name = "txtbPersonNameInscription";
             this.txtbPersonNameInscription.ReadOnly = true;
@@ -136,13 +135,6 @@ namespace CECLdb
             this.lblStartDate.TabIndex = 10;
             this.lblStartDate.Text = "Fecha de Inicio";
             // 
-            // txtbStartdateInscription
-            // 
-            this.txtbStartdateInscription.Location = new System.Drawing.Point(26, 292);
-            this.txtbStartdateInscription.Name = "txtbStartdateInscription";
-            this.txtbStartdateInscription.Size = new System.Drawing.Size(340, 27);
-            this.txtbStartdateInscription.TabIndex = 12;
-            // 
             // lblFinalDateInscription
             // 
             this.lblFinalDateInscription.AutoSize = true;
@@ -152,32 +144,55 @@ namespace CECLdb
             this.lblFinalDateInscription.TabIndex = 13;
             this.lblFinalDateInscription.Text = "Fecha de Fin";
             // 
-            // txtbFinalDateInscription
-            // 
-            this.txtbFinalDateInscription.Location = new System.Drawing.Point(26, 370);
-            this.txtbFinalDateInscription.Name = "txtbFinalDateInscription";
-            this.txtbFinalDateInscription.Size = new System.Drawing.Size(340, 27);
-            this.txtbFinalDateInscription.TabIndex = 14;
-            // 
             // bttnAddInscription
             // 
             this.bttnAddInscription.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bttnAddInscription.Location = new System.Drawing.Point(486, 415);
+            this.bttnAddInscription.Location = new System.Drawing.Point(440, 419);
             this.bttnAddInscription.Name = "bttnAddInscription";
             this.bttnAddInscription.Size = new System.Drawing.Size(97, 27);
             this.bttnAddInscription.TabIndex = 15;
             this.bttnAddInscription.Text = "Guardar";
             this.bttnAddInscription.UseVisualStyleBackColor = false;
             // 
+            // bttnReturnInscription
+            // 
+            this.bttnReturnInscription.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bttnReturnInscription.Location = new System.Drawing.Point(565, 419);
+            this.bttnReturnInscription.Name = "bttnReturnInscription";
+            this.bttnReturnInscription.Size = new System.Drawing.Size(97, 27);
+            this.bttnReturnInscription.TabIndex = 16;
+            this.bttnReturnInscription.Text = "Regresar";
+            this.bttnReturnInscription.UseVisualStyleBackColor = false;
+            this.bttnReturnInscription.Click += new System.EventHandler(this.bttnReturnInscription_Click);
+            // 
+            // mtbStartDate
+            // 
+            this.mtbStartDate.Location = new System.Drawing.Point(26, 294);
+            this.mtbStartDate.Mask = "00/00/0000";
+            this.mtbStartDate.Name = "mtbStartDate";
+            this.mtbStartDate.Size = new System.Drawing.Size(88, 27);
+            this.mtbStartDate.TabIndex = 17;
+            this.mtbStartDate.ValidatingType = typeof(System.DateTime);
+            // 
+            // mtbFinalDate
+            // 
+            this.mtbFinalDate.Location = new System.Drawing.Point(26, 373);
+            this.mtbFinalDate.Mask = "00/00/0000";
+            this.mtbFinalDate.Name = "mtbFinalDate";
+            this.mtbFinalDate.Size = new System.Drawing.Size(88, 27);
+            this.mtbFinalDate.TabIndex = 18;
+            this.mtbFinalDate.ValidatingType = typeof(System.DateTime);
+            // 
             // InscriptionReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1090, 495);
+            this.Controls.Add(this.mtbFinalDate);
+            this.Controls.Add(this.mtbStartDate);
+            this.Controls.Add(this.bttnReturnInscription);
             this.Controls.Add(this.bttnAddInscription);
-            this.Controls.Add(this.txtbFinalDateInscription);
             this.Controls.Add(this.lblFinalDateInscription);
-            this.Controls.Add(this.txtbStartdateInscription);
             this.Controls.Add(this.lblStartDate);
             this.Controls.Add(this.ckbApproved);
             this.Controls.Add(this.txtbPersonNameInscription);
@@ -207,9 +222,10 @@ namespace CECLdb
         private System.Windows.Forms.TextBox txtbPersonNameInscription;
         private System.Windows.Forms.CheckBox ckbApproved;
         private System.Windows.Forms.Label lblStartDate;
-        private System.Windows.Forms.TextBox txtbStartdateInscription;
         private System.Windows.Forms.Label lblFinalDateInscription;
-        private System.Windows.Forms.TextBox txtbFinalDateInscription;
         private System.Windows.Forms.Button bttnAddInscription;
+        private System.Windows.Forms.Button bttnReturnInscription;
+        private System.Windows.Forms.MaskedTextBox mtbStartDate;
+        private System.Windows.Forms.MaskedTextBox mtbFinalDate;
     }
 }

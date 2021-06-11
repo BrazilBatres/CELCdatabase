@@ -17,7 +17,10 @@ namespace CECLdb
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Menu Frm = new Menu();
+            Frm.Show();
+            Application.Run();
+            Singleton Sing = Singleton.GetInstance();
         }
     }
 }

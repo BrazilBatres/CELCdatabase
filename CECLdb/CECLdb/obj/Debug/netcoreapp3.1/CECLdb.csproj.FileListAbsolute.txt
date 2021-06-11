@@ -33,3 +33,4 @@ C:\Users\jocel\OneDrive\Documentos\GitHub\CELCdatabase\CECLdb\CECLdb\obj\Debug\n
 C:\Users\jocel\OneDrive\Documentos\GitHub\CELCdatabase\CECLdb\CECLdb\obj\Debug\netcoreapp3.1\CECLdb.dll
 C:\Users\jocel\OneDrive\Documentos\GitHub\CELCdatabase\CECLdb\CECLdb\obj\Debug\netcoreapp3.1\CECLdb.pdb
 C:\Users\jocel\OneDrive\Documentos\GitHub\CELCdatabase\CECLdb\CECLdb\obj\Debug\netcoreapp3.1\CECLdb.genruntimeconfig.cache
+C:\Users\jocel\OneDrive\Documentos\GitHub\CELCdatabase\CECLdb\CECLdb\obj\Debug\netcoreapp3.1\CECLdb.Menu.resources
