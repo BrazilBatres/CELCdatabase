@@ -37,6 +37,8 @@ namespace CECLdb
             this.txtbAreaName = new System.Windows.Forms.TextBox();
             this.bttnAddArea = new System.Windows.Forms.Button();
             this.bttnReturnArea = new System.Windows.Forms.Button();
+            this.bttnSearchArea = new System.Windows.Forms.Button();
+            this.bttnSaveArea = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblYear
@@ -111,11 +113,35 @@ namespace CECLdb
             this.bttnReturnArea.UseVisualStyleBackColor = false;
             this.bttnReturnArea.Click += new System.EventHandler(this.bttnReturnArea_Click);
             // 
+            // bttnSearchArea
+            // 
+            this.bttnSearchArea.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bttnSearchArea.Location = new System.Drawing.Point(449, 279);
+            this.bttnSearchArea.Name = "bttnSearchArea";
+            this.bttnSearchArea.Size = new System.Drawing.Size(94, 30);
+            this.bttnSearchArea.TabIndex = 9;
+            this.bttnSearchArea.Text = "Buscar";
+            this.bttnSearchArea.UseVisualStyleBackColor = false;
+            this.bttnSearchArea.Visible = false;
+            // 
+            // bttnSaveArea
+            // 
+            this.bttnSaveArea.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bttnSaveArea.Location = new System.Drawing.Point(312, 349);
+            this.bttnSaveArea.Name = "bttnSaveArea";
+            this.bttnSaveArea.Size = new System.Drawing.Size(94, 30);
+            this.bttnSaveArea.TabIndex = 10;
+            this.bttnSaveArea.Text = "Guardar";
+            this.bttnSaveArea.UseVisualStyleBackColor = false;
+            this.bttnSaveArea.Visible = false;
+            // 
             // AreaReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bttnSaveArea);
+            this.Controls.Add(this.bttnSearchArea);
             this.Controls.Add(this.bttnReturnArea);
             this.Controls.Add(this.bttnAddArea);
             this.Controls.Add(this.txtbAreaName);
@@ -126,6 +152,7 @@ namespace CECLdb
             this.Controls.Add(this.lblYear);
             this.Name = "AreaReg";
             this.Text = "AreaReg";
+            this.Load += new System.EventHandler(this.AreaReg_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,5 +168,7 @@ namespace CECLdb
         private System.Windows.Forms.TextBox txtbAreaName;
         private System.Windows.Forms.Button bttnAddArea;
         private System.Windows.Forms.Button bttnReturnArea;
+        private System.Windows.Forms.Button bttnSearchArea;
+        private System.Windows.Forms.Button bttnSaveArea;
     }
 }

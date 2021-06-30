@@ -68,7 +68,7 @@ namespace CECLdb
             this.bttnAddMenu.TabIndex = 1;
             this.bttnAddMenu.Text = "Agregar";
             this.bttnAddMenu.UseVisualStyleBackColor = false;
-            this.bttnAddMenu.Click += new System.EventHandler(this.button1_Click);
+            this.bttnAddMenu.Click += new System.EventHandler(this.bttnAddMenu_Click);
             // 
             // gpbAdd
             // 
@@ -131,6 +131,7 @@ namespace CECLdb
             this.bttnModifyMenu.TabIndex = 7;
             this.bttnModifyMenu.Text = "Modificar";
             this.bttnModifyMenu.UseVisualStyleBackColor = false;
+            this.bttnModifyMenu.Click += new System.EventHandler(this.bttnModifyMenu_Click);
             // 
             // rbttnAddCourse
             // 

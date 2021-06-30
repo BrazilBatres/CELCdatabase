@@ -178,16 +178,18 @@ namespace CECLdb
             this.bttnSearchAd.TabIndex = 15;
             this.bttnSearchAd.Text = "Buscar";
             this.bttnSearchAd.UseVisualStyleBackColor = false;
+            this.bttnSearchAd.Visible = false;
             // 
             // bttnSaveAd
             // 
             this.bttnSaveAd.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bttnSaveAd.Location = new System.Drawing.Point(346, 571);
+            this.bttnSaveAd.Location = new System.Drawing.Point(466, 571);
             this.bttnSaveAd.Name = "bttnSaveAd";
             this.bttnSaveAd.Size = new System.Drawing.Size(114, 30);
             this.bttnSaveAd.TabIndex = 16;
             this.bttnSaveAd.Text = "Guardar";
             this.bttnSaveAd.UseVisualStyleBackColor = false;
+            this.bttnSaveAd.Visible = false;
             // 
             // AdReg
             // 
@@ -212,6 +214,7 @@ namespace CECLdb
             this.Controls.Add(this.lblSelectAreaAd);
             this.Name = "AdReg";
             this.Text = "AdReg";
+            this.Load += new System.EventHandler(this.AdReg_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
