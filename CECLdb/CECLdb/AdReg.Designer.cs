@@ -45,6 +45,7 @@ namespace CECLdb
             this.label1 = new System.Windows.Forms.Label();
             this.bttnSearchAd = new System.Windows.Forms.Button();
             this.bttnSaveAd = new System.Windows.Forms.Button();
+            this.lblEscAd = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblSelectAreaAd
@@ -191,11 +192,23 @@ namespace CECLdb
             this.bttnSaveAd.UseVisualStyleBackColor = false;
             this.bttnSaveAd.Visible = false;
             // 
+            // lblEscAd
+            // 
+            this.lblEscAd.AutoSize = true;
+            this.lblEscAd.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lblEscAd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEscAd.Location = new System.Drawing.Point(829, 23);
+            this.lblEscAd.Name = "lblEscAd";
+            this.lblEscAd.Size = new System.Drawing.Size(165, 22);
+            this.lblEscAd.TabIndex = 17;
+            this.lblEscAd.Text = "(ESC) Regresar al Menu";
+            // 
             // AdReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1058, 646);
+            this.Controls.Add(this.lblEscAd);
             this.Controls.Add(this.bttnSaveAd);
             this.Controls.Add(this.bttnSearchAd);
             this.Controls.Add(this.label1);
@@ -212,9 +225,11 @@ namespace CECLdb
             this.Controls.Add(this.lblSelectCourseAd);
             this.Controls.Add(this.cmbSelectAreaAd);
             this.Controls.Add(this.lblSelectAreaAd);
+            this.KeyPreview = true;
             this.Name = "AdReg";
             this.Text = "AdReg";
             this.Load += new System.EventHandler(this.AdReg_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Exit);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,5 +253,6 @@ namespace CECLdb
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bttnSearchAd;
         private System.Windows.Forms.Button bttnSaveAd;
+        private System.Windows.Forms.Label lblEscAd;
     }
 }

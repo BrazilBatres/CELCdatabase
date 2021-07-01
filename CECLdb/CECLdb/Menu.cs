@@ -153,5 +153,13 @@ namespace CECLdb
                 MessageBox.Show("Seleccione alguna opción");
             }
         }
+
+        private void Exit(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode==Keys.Escape)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

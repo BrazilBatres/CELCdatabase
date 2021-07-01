@@ -36,5 +36,15 @@ namespace CECLdb
         private void AreaReg_Load(object sender, EventArgs e)
         {
         }
+
+        private void Exit(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                Menu Frm = new Menu();
+                Frm.Show();
+                this.Close();
+            }
+        }
     }
 }

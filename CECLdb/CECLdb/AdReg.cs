@@ -42,5 +42,15 @@ namespace CECLdb
         {
           
         }
+
+        private void Exit(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode==Keys.Escape)
+            {
+                Menu Frm = new Menu();
+                Frm.Show();
+                this.Close();
+            }
+        }
     }
 }
